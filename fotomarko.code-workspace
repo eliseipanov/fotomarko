@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "real3d-flipbook-v3.17",
+			"path": "..\\real3d-flipbook-v3.17"
+		},
+		{
+			"name": "Sailor",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Sailor",
+		"git.ignoreLimitWarning": true
+	}
+}
