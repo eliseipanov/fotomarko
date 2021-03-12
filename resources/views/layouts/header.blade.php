@@ -27,9 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-@if ( {{@$someindexpagevariable}} )
+
 @include('layouts.header')
-@endif
+
 
   <!-- =======================================================
   * Template Name: Sailor - v4.0.1
