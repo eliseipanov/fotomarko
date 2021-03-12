@@ -48,7 +48,7 @@ $(document).ready(function () {
             {src:"https://fotomarko.de/assets/images/book2/page2.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb6.jpg", title:"Page six"},
             {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb7.jpg", title:"Page seven"},
             {src:"https://fotomarko.de/assets/images/book2/page2.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb8.jpg", title:"Last"}
-        ],zoomLevels:[0.9,3], deeplinking:{enabled:true, prefix:"",autoplayOnStart:true, autoplayInterval:3000}
+        ],zoomLevels:[0.9,3], deeplinking:{enabled:true, prefix:"",autoplayOnStart:true, autoplayInterval:3000,backgroundColor:"#FFFFFF"}
     });
 
 })
