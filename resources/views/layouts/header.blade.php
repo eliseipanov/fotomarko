@@ -26,6 +26,10 @@
   <link href="{{asset('assets')}}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
   <link href="{{asset('assets')}}/css/style.css" rel="stylesheet">
+
+  <!-- FLIPBOOK -->
+  <link href="{{asset('assets')}}/css/flipbook.style.css" rel="stylesheet">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
 
@@ -38,7 +42,7 @@ $(document).ready(function () {
             {src:"https://fotomarko.de/assets/images/book2/page1.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb1.jpg", title:"Cover",
             '<a href="#">link to 3d flipbook</a><p style="color:#FFF">HTML Content on the page</p><div style="position:absolute;top:400px;"></div>'
             },
-            {src:'{{asset("assets")}}/images/book2/page2.jpg', thumb:"https://fotomarko.de/assets/images/book2/thumb2.jpg", title:"Page two"},
+            {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb2.jpg", title:"Page two"},
             {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb3.jpg", title:"Page three"},
             {src:"https://fotomarko.de/assets/images/book2/page4.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb4.jpg", title:""},
             {src:"https://fotomarko.de/assets/images/book2/page5.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb5.jpg", title:"Page five"},
