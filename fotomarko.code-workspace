@@ -7,6 +7,9 @@
 		{
 			"name": "Sailor",
 			"path": "."
+		},
+		{
+			"path": "..\\flipbook"
 		}
 	],
 	"settings": {
