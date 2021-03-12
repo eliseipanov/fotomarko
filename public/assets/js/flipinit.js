@@ -1,7 +1,7 @@
 $(document).ready(function () {
     $("#container").flipBook({
         pages:[
-            {src:"https://fotomarko.de/assets/images/book2/page1.jpg", thumb:"/images/book2/thumb1.jpg", title:"Cover"},
+            {src:"https://fotomarko.de/assets/images/book2/page1.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb1.jpg", title:"Cover"},
             {src:"https://fotomarko.de/assets/images/book2/page2.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb2.jpg", title:"Page two"},
             {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb3.jpg", title:"Page three"},
             {src:"https://fotomarko.de/assets/images/book2/page4.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb4.jpg", title:""},
