@@ -99,6 +99,7 @@ return [
         'enabled' => true,
         'default' => 'en',
         'locales' => [
+            'en',
             'de',
             'uk',
             'ru',
