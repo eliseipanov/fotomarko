@@ -7,7 +7,7 @@
 @include('layouts.about')
 @include('layouts.clients')
 @include('layouts.services')
-@include('layouts.potrfolio')
+@include('layouts.portfolio')
 @include('layouts.footer')
 </main>
 <!-- End #main -->
