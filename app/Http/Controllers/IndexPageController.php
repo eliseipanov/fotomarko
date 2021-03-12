@@ -8,10 +8,10 @@ class IndexPageController extends Controller
 {
     //
 public function index ($locale) {
-    if !isset($locale) {
+    if (!isset($locale)) {
     $locale = 'en';
     }
-    return view('index');
+    return view('index')->with('locale', 'en');
 
 }
 }
