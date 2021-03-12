@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
-use App\Http\Controllers\IndexPagecontroller as IndexPagecontroller;
+use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,7 @@ use App\Http\Controllers\IndexPagecontroller as IndexPagecontroller;
 Route::get('/', function () {
     return Http::get('/https://fotomarko.de/index.html');
 });
+
 Route::get('/', [IndexPagecontroller::class, 'index']);
 
 
