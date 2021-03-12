@@ -14,10 +14,7 @@ use Illuminate\Support\Facades\Http;
 */
 
 Route::get('/', function () {
-    $response = Http::get('https://fotomarko.de/index.html', [
-        'name' => 'M A R K O',
-        'page' => 1,
-    ]);
+    return Http::get('/https://fotomarko.de/index.html');
 });
 
 
