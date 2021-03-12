@@ -14,9 +14,9 @@ use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return Http::get('/https://fotomarko.de/index.html');
-});
+}); */
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 
