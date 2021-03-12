@@ -1,4 +1,4 @@
-$(document).ready(function () @{
+$(document).ready(function () {
     $("#container").flipBook({
         pages:[
             {src:"assets/images/book2/page1.jpg", thumb:"images/book2/thumb1.jpg", title:"Cover"},
