@@ -28,7 +28,7 @@
   <link href="{{assets('assets')}}/css/style.css" rel="stylesheet">
 
 
-@include('layouts.flipbook')
+<!--@include('layouts.flipbook') -->
 
 
   <!-- =======================================================
