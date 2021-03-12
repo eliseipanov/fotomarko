@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\IndexPagecontroller as IndexPagecontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Http;
 Route::get('/', function () {
     return Http::get('/https://fotomarko.de/index.html');
 });
+Route::get('/', [IndexPagecontroller::class, 'index']);
 
 
 Route::group(['prefix' => 'admin'], function () {
