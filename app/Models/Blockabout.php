@@ -10,7 +10,7 @@ class Blockabout extends Model
 {
     use Translatable;
     protected $table = 'blockabout';
-    protected $fillable = ['title','subtitle','text']
+    protected $fillable = ['title','subtitle','text'];
 
     protected $translatable = ['title', 'subtitle', 'text'];
     use HasFactory;
