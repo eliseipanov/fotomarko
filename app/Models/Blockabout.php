@@ -9,7 +9,7 @@ use TCG\Voyager\Traits\Translatable;
 class Blockabout extends Model
 {
     use Translatable;
-    prortected $table = 'blockabout';
+    protected $table = 'blockabout';
     protected $fillable = ['title','subtitle','text']
 
     protected $translatable = ['title', 'subtitle', 'text'];
