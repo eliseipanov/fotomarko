@@ -20,14 +20,12 @@ use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 
-Route::get(['prefix' => '{locale}'], function ($locale) {
+Route::group(['prefix' => 'ru'], function ($locale) {
 
-    if (! in_array($locale, ['ru', 'de', 'uk'])) {
-        App::setLocale('en');
-    }
-    die ("Locale is". $locale);
+        App::setLocale('ru');
 
-   // Route::get('/', [IndexPostController::class, 'index']);
+
+   Route::get('/', [IndexPostController::class, 'index']);
    // Route::get('/blog', [IndexPostController::class, 'index']);
    // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
    // Route::get('/about', [IndexPostController::class, 'about']);
