@@ -34,7 +34,7 @@ Route::group(['prefix' => '{locale}'], function ($locale) {
    // Route::get('/services', [IndexPostController::class, 'services']);
    // Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
    // Route::get('/team', [IndexPostController::class, 'team']);
- )};
+ });
 
 
 Route::group(['prefix' => 'admin'], function () {
