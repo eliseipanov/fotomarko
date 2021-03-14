@@ -179,6 +179,19 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-subjects">
+          <div class="portfolio-wrap">
+            <img src="assets/img/portfolio/portfolio-11.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Subjects</h4>
+              <p>Mashrooms</p>
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-animals">
           <div class="portfolio-wrap">
