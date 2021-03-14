@@ -26,6 +26,9 @@ Route::group(['prefix' => 'ru'], function ($locale) {
 
 
    Route::get('/', [IndexPagecontroller::class, 'index']);
+   Route::get('/blog', function () {
+    return Http::get('/https://fotomarko.de/blog.html');
+   });
    // Route::get('/blog', [IndexPostController::class, 'index']);
    // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
    // Route::get('/about', [IndexPostController::class, 'about']);
