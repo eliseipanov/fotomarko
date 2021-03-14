@@ -7,8 +7,8 @@
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-people">People</li>
-            <li data-filter=".filter-animals">Subjects</li>
-            <li data-filter=".filter-subjects">Animals</li>
+            <li data-filter=".filter-subjects">Subjects</li>
+            <li data-filter=".filter-animals">Animals</li>
             <li data-filter=".filter-city">City</li>
           </ul>
         </div>
