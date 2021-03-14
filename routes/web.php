@@ -22,19 +22,19 @@ Route::get('/', [IndexPagecontroller::class, 'index']);
 
 Route::group(['prefix' => '{locale}'], function ($locale) {
 
-    if (!$locale in ['ru','de','uk']) {
+    if (! in_array($locale, ['ru', 'de', 'uk'])) {
         App::setLocale('en');
     }
-    die "Locale is". $locale;
+    die ("Locale is". $locale);
 
-    Route::get('/', [IndexPostController::class, 'index']);
-    Route::get('/blog', [IndexPostController::class, 'index']);
-    Route::get('/pages/{slug}', [PageController::class, 'showpage']);
-    Route::get('/about', [IndexPostController::class, 'about']);
-    Route::get('/services', [IndexPostController::class, 'services']);
-    Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
-    Route::get('/team', [IndexPostController::class, 'team']);
-}
+   // Route::get('/', [IndexPostController::class, 'index']);
+   // Route::get('/blog', [IndexPostController::class, 'index']);
+   // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
+   // Route::get('/about', [IndexPostController::class, 'about']);
+   // Route::get('/services', [IndexPostController::class, 'services']);
+   // Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
+   // Route::get('/team', [IndexPostController::class, 'team']);
+ )};
 
 
 Route::group(['prefix' => 'admin'], function () {
