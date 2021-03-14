@@ -20,7 +20,7 @@ use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 
-Route::group(['prefix' => '{locale}'], function ($locale) {
+Route::get(['prefix' => '{locale}'], function ($locale) {
 
     if (! in_array($locale, ['ru', 'de', 'uk'])) {
         App::setLocale('en');
