@@ -25,7 +25,7 @@ Route::group(['prefix' => 'ru'], function ($locale) {
         App::setLocale('ru');
 
 
-   Route::get('/', [IndexPostController::class, 'index']);
+   Route::get('/', [IndexPagecontroller::class, 'index']);
    // Route::get('/blog', [IndexPostController::class, 'index']);
    // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
    // Route::get('/about', [IndexPostController::class, 'about']);
