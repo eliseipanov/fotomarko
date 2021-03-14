@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-subjects">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-animals">
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
