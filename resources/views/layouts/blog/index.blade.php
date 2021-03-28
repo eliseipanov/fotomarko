@@ -1,10 +1,4 @@
 @inclide('layouts.blog.header')
-@php
-$currentlocale = str_replace('_', '-', app()->getLocale());
-if ($currentlocale == 'en')
-{ $locale = '';}
-else {$locale = $curentlocale;}
-@endphp
 
 <body>
 
