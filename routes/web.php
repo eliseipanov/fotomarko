@@ -20,11 +20,9 @@ use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 
-Route::group(['prefix' => 'ru'], function ($locale) {
+Route::group(['prefix' => 'de'], function ($locale) {
 
-        App::setLocale('ru');
-
-
+   App::setLocale('de');
    Route::get('/', [IndexPagecontroller::class, 'index']);
    Route::get('/blog', function () {
     return redirect()->action([IndexPagecontroller::class, 'index']);
