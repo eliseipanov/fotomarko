@@ -34,7 +34,8 @@
 
           <!-- <li><a href="contact.html">Contact</a></li> -->
           <li><a href="#contact" class="getstarted">Get in Touch</a></li>
-          <li><select class="selectpicker" data-width="fit">
+          <li>
+              <select class="selectpicker" data-width="fit">
             <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
           <option  data-content='<span class="flag-icon flag-icon-de"></span> Deutsch'>Deutsch</option>
         </select></li>
