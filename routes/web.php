@@ -20,10 +20,11 @@ use App\Http\Controllers\BlogController as BlogController;
 }); */
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
-Route::get('/blog', function () {
+/*Route::get('/blog', function () {
     App::setLocale('en');
     return redirect()->action([BlogController::class, 'index']);
-    });
+    }); */
+    Route::get('/blog', [BlogController::class, 'index']);
 
 Route::group(['prefix' => 'de'], function ($locale) {
 
