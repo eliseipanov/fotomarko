@@ -1,4 +1,4 @@
-@inclide('layouts.blog.header')
+@include('layouts.blog.header')
 
 <body>
 
