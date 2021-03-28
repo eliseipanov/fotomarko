@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     //
-    public function allposts() {
+    public function index() {
     return view('layouts.blog.index');
     }
 }
