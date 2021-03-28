@@ -22,7 +22,7 @@ use App\Http\Controllers\BlogController as BlogController;
 Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', function () {
     App::setLocale('en');
-    return redirect()->action([BlogController::class, 'showposts']);
+    return redirect()->action([BlogController::class, 'allposts']);
     });
 
 Route::group(['prefix' => 'de'], function ($locale) {
@@ -30,7 +30,7 @@ Route::group(['prefix' => 'de'], function ($locale) {
    App::setLocale('de');
    Route::get('/', [IndexPagecontroller::class, 'index']);
    Route::get('/blog', function () {
-    return redirect()->action([BlogController::class, 'showposts']);
+    return redirect()->action([BlogController::class, 'allposts']);
    });
 
    // Route::get('/blog', [IndexPostController::class, 'index']);
