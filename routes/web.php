@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\IndexPageController as IndexPagecontroller;
+use App\Http\Controllers\BlogController as BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,13 +20,17 @@ use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 }); */
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
+Route::get('/blog', function () {
+    App::setLocale('en');
+    return redirect()->action([BlogController::class, 'showposts']);
+    });
 
 Route::group(['prefix' => 'de'], function ($locale) {
 
    App::setLocale('de');
    Route::get('/', [IndexPagecontroller::class, 'index']);
    Route::get('/blog', function () {
-    return redirect()->action([IndexPagecontroller::class, 'index']);
+    return redirect()->action([BlogController::class, 'showposts']);
    });
 
    // Route::get('/blog', [IndexPostController::class, 'index']);

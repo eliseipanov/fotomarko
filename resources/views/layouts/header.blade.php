@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Oleksii Marchenko - Forografer im Osnabrück</title>
+  <title>Oleksii Marchenko - Fotografer in Osnabrück</title>
   <meta content="Нужен фотограф для компании? Альбом с воспоминаниями вместо мыльных фоток в Фейсбуке? НОМЕР ТЕЛЕФОНА" name="description">
   <meta content="фотограф, русский фотограф в оснабрюке, русскогвоорящий фотограф, украинцы в Оснабрюке" name="keywords">
 
