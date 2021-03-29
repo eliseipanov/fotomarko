@@ -21,7 +21,7 @@
           <li>
               {{-- <a href="/portfolio">Portfolio</a> --}}
             <li class="dropdown">
-                <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-right"></i></a>
+                <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/tags/people">{{ __('mainpage.people') }}</a></li>
                   <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/tags/nature">{{ __('mainpage.nature') }}</a></li>
