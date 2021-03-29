@@ -27,7 +27,7 @@ return [
 'people' => 'People',
 'nature' => 'Nature',
 'subject' => 'Subject',
-'panorama' => 'Panorama',
+'panorama' => '360 Panorams',
 'retouche' => 'Retouche',
 'getintouch' => 'Get in Touch',
 'contact' => 'Contacts',
