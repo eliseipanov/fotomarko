@@ -29,7 +29,12 @@ Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::group(['prefix' => 'de'], function ($locale) {
 
    App::setLocale('de');
-   Route::get('/', [IndexPagecontroller::class, 'index']);
+
+   //Route::get('/', [IndexPagecontroller::class, 'index']);
+
+   Route::get('/', function () {
+    return redirect()->action([IndexPagecontroller::class, 'index']);
+   });
    Route::get('/blog', function () {
     return redirect()->action([BlogController::class, 'index']);
    });
