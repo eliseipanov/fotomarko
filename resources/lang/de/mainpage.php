@@ -24,4 +24,10 @@ return [
 'portfolio' => 'Portfolio',
 'pricing' => 'Preise',
 'language' => 'Sprache',
+'people' => 'Personen',
+'nature' => 'Die Natur',
+'subject' => 'Objekt',
+'panorama' => '360 Panorama',
+'retouche' => 'Nachbesserung',
+'getintouch' => 'Kontakt aufnehmen',
 ];

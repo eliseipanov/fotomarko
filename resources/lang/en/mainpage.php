@@ -24,4 +24,10 @@ return [
 'portfolio' => 'About me',
 'pricing' => 'About me',
 'language' => 'Language',
+'people' => 'People',
+'nature' => 'Nature',
+'subject' => 'Subject',
+'panorama' => 'Panorama',
+'retouche' => 'Retouche',
+'getintouch' => 'Get in Touch',
 ];
