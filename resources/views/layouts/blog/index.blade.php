@@ -2,7 +2,7 @@
 
 <body>
 
-  @include('layouts.blog.navtop')
+  @include('layouts.navtop')
 
   <main id="main">
 
