@@ -35,6 +35,7 @@ Route::group(['prefix' => 'de'], function ($locale) {
    Route::get('/', function () {
     return redirect()->action([IndexPagecontroller::class, 'index']);
    });
+
    Route::get('/blog', function () {
     return redirect()->action([BlogController::class, 'index']);
    });
@@ -46,6 +47,30 @@ Route::group(['prefix' => 'de'], function ($locale) {
    // Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
    // Route::get('/team', [IndexPostController::class, 'team']);
  });
+
+//Engish routes
+Route::group(['prefix' => 'en'], function ($locale) {
+
+    App::setLocale('en');
+
+    //Route::get('/', [IndexPagecontroller::class, 'index']);
+
+    Route::get('/', function () {
+     return redirect()->action([IndexPagecontroller::class, 'index']);
+    });
+
+    Route::get('/blog', function () {
+     return redirect()->action([BlogController::class, 'index']);
+    });
+
+    // Route::get('/blog', [IndexPostController::class, 'index']);
+    // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
+    // Route::get('/about', [IndexPostController::class, 'about']);
+    // Route::get('/services', [IndexPostController::class, 'services']);
+    // Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
+    // Route::get('/team', [IndexPostController::class, 'team']);
+  });
+
 
 
 Route::group(['prefix' => 'admin'], function () {
