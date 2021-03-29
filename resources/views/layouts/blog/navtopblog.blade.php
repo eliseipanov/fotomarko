@@ -47,7 +47,7 @@
                     $de = '';
                 }
                 else {
-                    $de = "/de"
+                    $de = "/de";
                 }
                 @endphp
               <li><a href="{{ $en ?? '' }}/{{ Request::path() }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
