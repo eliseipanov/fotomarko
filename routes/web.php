@@ -20,6 +20,7 @@ use App\Http\Controllers\BlogController as BlogController;
 }); */
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
+
 /*Route::get('/blog', function () {
     App::setLocale('en');
     return redirect()->action([BlogController::class, 'index']);
@@ -33,10 +34,12 @@ Route::group(['prefix' => 'de'], function ($locale) {
    //Route::get('/', [IndexPagecontroller::class, 'index']);
 
    Route::get('/', function () {
+    App::setLocale('de');
     return redirect()->action([IndexPagecontroller::class, 'index']);
    });
 
    Route::get('/blog', function () {
+    App::setLocale('de');
     return redirect()->action([BlogController::class, 'index']);
    });
 
@@ -56,10 +59,12 @@ Route::group(['prefix' => 'en'], function ($locale) {
     //Route::get('/', [IndexPagecontroller::class, 'index']);
 
     Route::get('/', function () {
+        App::setLocale('de');
      return redirect()->action([IndexPagecontroller::class, 'index']);
     });
 
     Route::get('/blog', function () {
+        App::setLocale('de');
      return redirect()->action([BlogController::class, 'index']);
     });
 
