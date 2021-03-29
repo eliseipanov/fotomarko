@@ -28,7 +28,7 @@ return [
 'nature' => 'Die Natur',
 'subject' => 'Objekt',
 'panorama' => '360 Panorama',
-'retouche' => 'Nachbesserung',
+'retouche' => 'Fotoretusche',
 'getintouch' => 'Kontakt aufnehmen',
 'contact' => 'Kontakt',
 ];
