@@ -34,7 +34,7 @@
 
           <!-- <li><a href="contact.html">Contact</a></li> -->
           <li><a href="#contact" class="getstarted">Get in Touch</a></li>
-          <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+          <li class="dropdown"><a href="#"><span>Language </span> <i class="bi bi-chevron-right"></i></a>
             <ul>
               <li><a href="/en/{{url()->current()}}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
               <li><a href="/de/{{url()->current()}}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
