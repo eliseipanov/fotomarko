@@ -30,4 +30,5 @@ return [
 'panorama' => '360 Panorama',
 'retouche' => 'Nachbesserung',
 'getintouch' => 'Kontakt aufnehmen',
+'contact' => 'Kontakt',
 ];

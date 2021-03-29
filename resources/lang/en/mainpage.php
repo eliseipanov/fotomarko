@@ -30,4 +30,5 @@ return [
 'panorama' => 'Panorama',
 'retouche' => 'Retouche',
 'getintouch' => 'Get in Touch',
+'contact' => 'Contacts',
 ];
