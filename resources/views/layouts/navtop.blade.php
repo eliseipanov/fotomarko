@@ -17,7 +17,7 @@
               <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/testimonials">{{ __('mainpage.testimonials') }}</a></li>
             </ul>
           </li>
-          <li><a href="/services">{{ __('mainpage.services') }}</a></li>
+          <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/services">{{ __('mainpage.services') }}</a></li>
           <li>
               {{-- <a href="/portfolio">Portfolio</a> --}}
             <li class="dropdown">
