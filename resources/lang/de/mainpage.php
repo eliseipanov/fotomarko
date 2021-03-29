@@ -16,5 +16,12 @@ return [
 'search' => 'Suche',
 'blog' => 'Das Blog',
 'tags' => 'Stichwort',
-
+'home' => 'Startseite',
+'about' => 'Über mich',
+'team' => 'Das Team',
+'testimonials' => 'Zeugnisse',
+'services' => 'Dienste',
+'portfolio' => 'Portfolio',
+'pricing' => 'Preise',
+'language' => 'Sprache',
 ];
