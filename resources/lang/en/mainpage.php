@@ -16,7 +16,7 @@ return [
 'search' => 'Search me',
 'blog' => 'Main Blog',
 'tags' => 'The Tags',
-'home' => 'Startseite',
+'home' => 'Home',
 'about' => 'About me',
 'team' => 'Team',
 'testimonials' => 'Testimonials',

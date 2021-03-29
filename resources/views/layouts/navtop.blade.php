@@ -8,7 +8,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="/" class="active">{{ __('mainpage.home')}}</a></li>
+          <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/" class="active">{{ __('mainpage.home')}}</a></li>
 
           <li class="dropdown"><a href="#"><span>{{ __('mainpage.about') }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
