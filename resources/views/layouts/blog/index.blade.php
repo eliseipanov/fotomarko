@@ -163,7 +163,7 @@
 
             <div class="sidebar">
 
-              <h3 class="sidebar-title">Search</h3>
+              <h3 class="sidebar-title">{{ __('mainpage.search') }}</h3>
               <div class="sidebar-item search-form">
                 <form action="">
                   <input type="text">
