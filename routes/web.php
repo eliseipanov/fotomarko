@@ -19,11 +19,13 @@ use Illuminate\Support\Facades\App;
 
 Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'locale:de'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('dehome');
+    Route::get('blog', [BlogController::class, 'index'])->name('deblog');
     // ...
 });
 
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
+    Route::get('blog', [BlogController::class, 'index'])->name('enblog');
     // ...
 });
 

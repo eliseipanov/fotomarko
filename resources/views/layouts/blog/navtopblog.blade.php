@@ -38,22 +38,10 @@
           <li><a href="#contact" class="getstarted">{{ __('mainpage.getintouch') }}</a></li>
           <li class="dropdown"><a href="#"><span>{{ __('mainpage.language') }} </span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-                @php
-                if (Request::is('en/*')) {
-                    $en = '';
-                }
-                else {
-                    $en = "/en";
-                }
-                if (Request::is('de/*')) {
-                    $de = '';
-                }
-                else {
-                    $de = "/de";
-                }
-                @endphp
-              <li><a href="{{ $en }}/{{ Request::path() }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
-              <li><a href="{{ $de }}/{{ Request::path() }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
+
+                    <li><a href="{{ route('enhome') }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
+                    <li><a href="{{ route('dehome') }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
+
             </ul>
           </li>
 

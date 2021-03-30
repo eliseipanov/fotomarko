@@ -2,7 +2,7 @@
 <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">M A R K O</a></h1>
+      <h1 class="logo me-auto"><a href="/{{ app()->getLocale() }}">M A R K O</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -38,21 +38,6 @@
           <li><a href="#contact" class="getstarted">{{ __('mainpage.getintouch') }}</a></li>
           <li class="dropdown"><a href="#"><span>{{ __('mainpage.language') }} </span> <i class="bi bi-chevron-right"></i></a>
             <ul>
-
-                @php
-                if (Request::is('en/*')) {
-                    $en = '';
-                }
-                else {
-                    $en = "/en";
-                }
-                if (Request::is('de/*')) {
-                    $de = '';
-                }
-                else {
-                    $de = "/de";
-                }
-                @endphp
               <li><a href="{{ route('enhome') }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
               <li><a href="{{ route('dehome') }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
             </ul>
