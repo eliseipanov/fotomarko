@@ -14,7 +14,7 @@ use App\Http\Controllers\BlogController as BlogController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['prefix' => '{locale}', function ($locale) {
+Route::group(['prefix' => '{locale}'], function ($locale) {
     if (! in_array($locale, ['de', 'en'])) {
         abort(404);
     }
