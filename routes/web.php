@@ -17,7 +17,7 @@ use App\Http\Controllers\BlogController as BlogController;
 
 use Illuminate\Support\Facades\App;
 
-Route::get('/{locale}/{slug}', function ($locale) {
+/*Route::get('/{locale}/{slug}', function ($locale) {
     if (! in_array($locale, ['en', 'de'])) {
         abort(400);
     }
@@ -26,6 +26,7 @@ Route::get('/{locale}/{slug}', function ($locale) {
 
     //
 });
+*/
 /*
 Route::group(['prefix' => '{lang}', 'where' => ['locale' => '[a-zA-Z]{2}']], function ($lang) {
 
@@ -36,8 +37,8 @@ Route::group(['prefix' => '{lang}', 'where' => ['locale' => '[a-zA-Z]{2}']], fun
 });
 */
 
-Route::get('/', [IndexPagecontroller::class, 'index']);
-Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/', [IndexPagecontroller::class, 'index'])->App::setLocale('de');
+Route::get('/blog', [BlogController::class, 'index'])->App::setLocale('en');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
