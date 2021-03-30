@@ -18,12 +18,12 @@ use App\Http\Controllers\BlogController as BlogController;
 use Illuminate\Support\Facades\App;
 
 Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'locale:de'], function() {
-    Route::get('/', 'IndexPagecontroller@index')->name('dehome');
+    Route::get('/', [IndexPagecontroller::class, 'index'])->name('dehome');
     // ...
 });
 
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
-    Route::get('/', 'IndexPagecontroller@index')->name('enhome');
+    Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
     // ...
 });
 
