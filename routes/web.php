@@ -14,6 +14,19 @@ use App\Http\Controllers\BlogController as BlogController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+use Illuminate\Support\Facades\App;
+
+Route::get('/{locale}/{slug}', function ($locale) {
+    if (! in_array($locale, ['en', 'de'])) {
+        abort(400);
+    }
+
+    App::setLocale($locale);
+
+    //
+});
+/*
 Route::group(['prefix' => '{lang}', 'where' => ['locale' => '[a-zA-Z]{2}']], function ($lang) {
 
    App::setLocale($lang);
@@ -21,7 +34,7 @@ Route::group(['prefix' => '{lang}', 'where' => ['locale' => '[a-zA-Z]{2}']], fun
     Route::get('/', 'IndexPagecontroller@index');
     Route::get('blog', 'BlogController@index');
 });
-
+*/
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
