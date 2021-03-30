@@ -53,8 +53,8 @@
                     $de = "/de";
                 }
                 @endphp
-              <li><a href="{{ $en }}/{{ Request::path() }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
-              <li><a href="{{ $de }}/{{ Request::path() }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
+              <li><a href="{{ route('enhome') }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
+              <li><a href="{{ route('dehome') }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
             </ul>
           </li>
 
