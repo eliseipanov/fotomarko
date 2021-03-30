@@ -97,12 +97,10 @@ return [
 
     'multilingual' => [
         'enabled' => true,
-        'default' => 'en',
+        'default' => 'de',
         'locales' => [
-            'en',
             'de',
-            'uk',
-            'ru',
+            'en',
         ],
     ],
 

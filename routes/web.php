@@ -25,23 +25,24 @@ Route::get('/', [IndexPagecontroller::class, 'index']);
     App::setLocale('en');
     return redirect()->action([BlogController::class, 'index']);
     }); */
-    Route::get('/blog', [BlogController::class, 'index']);
+Route::get('/blog', [BlogController::class, 'index']);
 
 Route::group(['prefix' => 'de'], function ($locale) {
 
    App::setLocale('de');
 
-   //Route::get('/', [IndexPagecontroller::class, 'index']);
+   Route::get('/', [IndexPagecontroller::class, 'index']);
+   Route::get('/blog', [BlogController::class, 'index']);
 
-   Route::get('/', function () {
-    App::setLocale('de');
-    return redirect()->action([IndexPagecontroller::class, 'index']);
+   // Route::get('/', function () {
+   // App::setLocale('de');
+   // return redirect()->action([IndexPagecontroller::class, 'index']);
    });
 
-   Route::get('/blog', function () {
-    App::setLocale('de');
-    return redirect()->action([BlogController::class, 'index']);
-   });
+   //Route::get('/blog', function () {
+   // App::setLocale('de');
+   // return redirect()->action([BlogController::class, 'index']);
+  // });
 
    // Route::get('/blog', [IndexPostController::class, 'index']);
    // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
@@ -49,16 +50,20 @@ Route::group(['prefix' => 'de'], function ($locale) {
    // Route::get('/services', [IndexPostController::class, 'services']);
    // Route::get('/portfolio', [IndexPostController::class, 'portfolio']);
    // Route::get('/team', [IndexPostController::class, 'team']);
- });
+ //});
 
 //Engish routes
 Route::group(['prefix' => 'en'], function ($locale) {
 
     App::setLocale('en');
+    
+
+   Route::get('/', [IndexPagecontroller::class, 'index']);
+   Route::get('/blog', [BlogController::class, 'index']);
 
     //Route::get('/', [IndexPagecontroller::class, 'index']);
 
-    Route::get('/', function () {
+   /*  Route::get('/', function () {
         App::setLocale('de');
      return redirect()->action([IndexPagecontroller::class, 'index']);
     });
@@ -66,7 +71,7 @@ Route::group(['prefix' => 'en'], function ($locale) {
     Route::get('/blog', function () {
         App::setLocale('de');
      return redirect()->action([BlogController::class, 'index']);
-    });
+    }); */
 
     // Route::get('/blog', [IndexPostController::class, 'index']);
     // Route::get('/pages/{slug}', [PageController::class, 'showpage']);
