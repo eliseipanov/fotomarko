@@ -20,6 +20,7 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], f
     Route::get('blog', 'BlogController@index');
 });
 
+
 Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
 
