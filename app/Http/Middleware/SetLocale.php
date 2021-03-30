@@ -21,7 +21,7 @@ class SetLocale
             return redirect('/');
         }
 
-        App::setLocale($locale);
+        \App::setLocale($locale);
 
         return $next($request);
     }
