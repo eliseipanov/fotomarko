@@ -14,7 +14,7 @@ use App\Http\Controllers\BlogController as BlogController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], function () {
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], function ($locale) {
     App::setLocale($locale);
     Route::get('/', 'IndexPagecontroller@index');
     Route::get('blog', 'BlogController@index');
