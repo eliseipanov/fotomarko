@@ -14,17 +14,11 @@ use App\Http\Controllers\BlogController as BlogController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::localizedGroup(function () {
-    // ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP
-    Route::get('/', function() {
-        return redirect()->action([IndexPageController::class, 'index']);
-    });
-
-    Route::get('blog', function() {
-        return redirect()->action([BlogController::class, 'index']);
-    });
+Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-zA-Z]{2}']], function () {
+    App::setLocale($locale);
+    Route::get('/', 'IndexPagecontroller@index');
+    Route::get('blog', 'BlogController@index');
 });
-
 
 Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
