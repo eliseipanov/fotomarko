@@ -17,29 +17,23 @@ use App\Http\Controllers\BlogController as BlogController;
 
 use Illuminate\Support\Facades\App;
 
-/*Route::get('/{locale}/{slug}', function ($locale) {
-    if (! in_array($locale, ['en', 'de'])) {
-        abort(400);
-    }
-
-    App::setLocale($locale);
-
-    //
+Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'locale:de'], function() {
+    Route::get('/', 'IndexPagecontroller@index')->name('Dehome');
+    // ...
 });
-*/
-/*
-Route::group(['prefix' => '{lang}', 'where' => ['locale' => '[a-zA-Z]{2}']], function ($lang) {
 
-   App::setLocale($lang);
-   die(App::getLocale());
-    Route::get('/', 'IndexPagecontroller@index');
-    Route::get('blog', 'BlogController@index');
+Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
+    Route::get('/', 'IndexPagecontroller@index')->name('EnHome');
+    // ...
 });
-*/
 
-Route::get('/', [IndexPagecontroller::class, 'index'])->App::setLocale('de');
-Route::get('/blog', [BlogController::class, 'index'])->App::setLocale('en');
+Route::get('/', function() {
+    return redirect()->route('DeHome');
+});
 
+/* Route::get('/', [IndexPagecontroller::class, 'index']);
+Route::get('/blog', [BlogController::class, 'index']);
+ */
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
