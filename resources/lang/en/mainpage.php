@@ -33,4 +33,11 @@ return [
 'contact' => 'Contacts',
 'location' => 'Location',
 'call' => 'Call',
+'yourname' => 'Your Name',
+'yourmail' => 'Your E-mail',
+'subject' =>'Subject',
+'messagesent' => 'Your message has been sent. Thank you!',
+'sendmessage' => 'Send',
+'loading' => 'Loading...',
+'message' => 'Message',
 ];
