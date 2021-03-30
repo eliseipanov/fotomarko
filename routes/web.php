@@ -15,7 +15,7 @@ use App\Http\Controllers\BlogController as BlogController;
 |
 */
 Route::group(['prefix' => '{locale}'], function ($locale) {
-die($locale);
+dd($locale);
     App::setLocale($locale);
     Route::get('/', 'IndexPagecontroller@index');
     Route::get('blog', 'BlogController@index');
