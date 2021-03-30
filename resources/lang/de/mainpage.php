@@ -31,4 +31,6 @@ return [
 'retouche' => 'Fotoretusche',
 'getintouch' => 'Kontakt aufnehmen',
 'contact' => 'Kontakt',
+'location' => 'Standort'
+'call' => 'Rufen Sie mich',
 ];

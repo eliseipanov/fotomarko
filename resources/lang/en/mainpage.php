@@ -31,4 +31,6 @@ return [
 'retouche' => 'Retouche',
 'getintouch' => 'Get in Touch',
 'contact' => 'Contacts',
+'location' => 'Location',
+'call' => 'Call',
 ];

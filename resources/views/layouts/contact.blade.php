@@ -12,7 +12,7 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
+              <h4>{{__('mainpage.location')}}:</h4>
               <p>Bremer Str 175, Osnabrück, 49086 </p>
             </div>
 
@@ -24,7 +24,7 @@
 
             <div class="phone">
               <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
+              <h4>{{__('mainpage.call')}}:</h4>
               <p>+49 176 779 759 78</p>
             </div>
 
