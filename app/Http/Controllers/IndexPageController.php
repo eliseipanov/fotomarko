@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Http\Models\Blockabout;
+use App\Models\Blockabout;
 use Illuminate\Http\Request;
 
 class IndexPageController extends Controller
