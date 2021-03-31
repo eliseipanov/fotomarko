@@ -9,7 +9,7 @@ class IndexPageController extends Controller
     //
     public function index () {
         $langnow = \App::getLocale();
-        $blockabout = BlockAbout::withTranslation($langnow)->get();
+        $blockabout = BlockAbout::withTranslation('en')->get();
     return view('layouts.index', compact('blockabout'));
         //return view('layouts.index');
     }
