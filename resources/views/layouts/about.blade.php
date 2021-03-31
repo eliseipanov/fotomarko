@@ -5,7 +5,7 @@
       <div class="row content">
         <div class="col-lg-6">
           <h2>{{ $blockabout[0]->title }}</h2>
-          <h3>{{ $blockabout[0]->description }}</h3>
+          <h3>{{ $blockabout[0]->subtitle }}</h3>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0">
           {!! $blockabout[0]->text !!}
