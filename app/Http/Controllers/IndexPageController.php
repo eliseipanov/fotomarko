@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Blockabout;
+use App\Models\Blockabout as BlockAbout;
 use Illuminate\Http\Request;
 
 class IndexPageController extends Controller
@@ -9,7 +9,7 @@ class IndexPageController extends Controller
     //
     public function index () {
         $langnow = \App::getLocale();
-        $blockabout = Blockabout::withTranslations($langnow)->get();
+        $blockabout = BlockAbout::withTranslations($langnow)->get();
     return view('layouts.index', compact('blockabout'));
         //return view('layouts.index');
     }
