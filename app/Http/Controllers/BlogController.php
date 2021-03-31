@@ -8,6 +8,7 @@ class BlogController extends Controller
 {
     //
     public function index() {
+
     return view('layouts.blog.index');
     }
 }
