@@ -10,12 +10,12 @@
  <script src="{{asset('assets')}}/js/main.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
-    $(function() {
+    $(document).ready(function() {
 
-window.cookieconsent.initialise({
+        window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#5868B5"
+      "background": "#5868b5"
     },
     "button": {
       "background": "transparent",
@@ -25,7 +25,13 @@ window.cookieconsent.initialise({
   },
   "position": "top",
   "static": true,
-  "type": "opt-out"
+  "type": "opt-out",
+  "content": {
+    "message": "Мы используем куки!",
+    "dismiss": "Отставить",
+    "deny": "Не соглашусь-ка",
+    "link": "Подробнее"
+  }
 });
 console.log( "ready!" );
 });
