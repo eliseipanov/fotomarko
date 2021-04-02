@@ -6,8 +6,9 @@
         <div class="col-md-6">
           <div class="icon-box">
             <i class="bi bi-briefcase"></i>
-            <h4><a href="#">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+            <h4><a href="#">Ihre Ferienwohnung
+                in 360°</a></h4>
+            <p>Wir erstellen eine virtuelle Tour Ihrer FeWo-Wow-Effekt inklusive</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 mt-md-0">

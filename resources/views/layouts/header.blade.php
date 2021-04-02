@@ -35,6 +35,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
   <script src="{{ asset('assets')}}/js/flipbook.min.js"></script>
 
@@ -54,6 +55,24 @@ $(document).ready(function () {
     });
 
 })
+</script>
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#5868B5"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+    }
+  },
+  "position": "top",
+  "static": true,
+  "type": "opt-out"
+});
 </script>
 
   <!-- =======================================================
