@@ -8,31 +8,4 @@
 
  <!-- Template Main JS File -->
  <script src="{{asset('assets')}}/js/main.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-<script>
-    $(document).ready(function() {
 
-        window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#5868b5"
-    },
-    "button": {
-      "background": "transparent",
-      "text": "#f1d600",
-      "border": "#f1d600"
-    }
-  },
-  "position": "top",
-  "static": true,
-  "type": "opt-out",
-  "content": {
-    "message": "Мы используем куки!",
-    "dismiss": "Отставить",
-    "deny": "Не соглашусь-ка",
-    "link": "Подробнее"
-  }
-});
-console.log( "ready!" );
-});
-</script>
