@@ -13,6 +13,7 @@ npm-debug.log
 yarn-error.log
 *.code-workspace
 *.log
+deploy.log
 public/deploy.log
 /public/deploy.*
 /public/deployer.php
