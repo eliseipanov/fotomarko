@@ -39,9 +39,9 @@
           <li class="dropdown"><a href="#"><span>{{ __('mainpage.language') }} </span> <i class="bi bi-chevron-right"></i></a>
             <ul>
                 @php
-                if(isset(Request::segment(2)) {$sla = "/";}
-                if(isset(Request::segment(3)) {$sla2 = "/";}
-                else {$sla = $sla2 = '';}
+                $sla = '';
+                if(isset(Request::segment(2) ? $sla2 = "/" : $sla2 = '';
+                if(isset(Request::segment(3) ? $sla3 = "/" : $sla3 = '';
                 @endphp
               <li><a href="{{ route('enhome') }}{{ $sla }}{{ Request::segment(2) ?? ''}}{{ $sla2 }}{{ Request::segment(3) ?? '' }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
               <li><a href="{{ route('dehome') }}/{{ Request::segment(2) ?? ''}}/{{ Request::segment(3) ?? '' }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
