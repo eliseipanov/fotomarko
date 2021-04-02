@@ -8,3 +8,21 @@
 
  <!-- Template Main JS File -->
  <script src="{{asset('assets')}}/js/main.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#5868B5"
+    },
+    "button": {
+      "background": "transparent",
+      "text": "#f1d600",
+      "border": "#f1d600"
+    }
+  },
+  "position": "top",
+  "static": true,
+  "type": "opt-out"
+});
+</script>
