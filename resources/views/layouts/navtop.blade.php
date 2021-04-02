@@ -44,7 +44,7 @@
                 if(Request::segment(3) !== 'null' ? $sla3 = "#" : $sla3 = '');
                 @endphp
               <li><a href="{{ route('enhome') }}{{ $sla2 }}{{ Request::segment(2) ?? ''}}{{ $sla3 }}{{ Request::segment(3) ?? '' }}"><span class="flag-icon flag-icon-us"> </span> English</a></li>
-              <li><a href="{{ route('dehome') }}/{{ Request::segment(2) ?? ''}}/{{ Request::segment(3) ?? '' }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
+              <li><a href="{{ route('dehome') }}{{ $sla2 }}{{ Request::segment(2) ?? ''}}{{ $sla3 }}{{ Request::segment(3) ?? '' }}"><span class="flag-icon flag-icon-de"> </span> Deutsch</a></li>
             </ul>
           </li>
 
