@@ -10,6 +10,8 @@
  <script src="{{asset('assets')}}/js/main.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
+    $(function() {
+
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
@@ -24,5 +26,7 @@ window.cookieconsent.initialise({
   "position": "top",
   "static": true,
   "type": "opt-out"
+});
+console.log( "ready!" );
 });
 </script>
