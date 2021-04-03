@@ -77,15 +77,15 @@ cookieconsent.run({"notice_banner_type":"headline","consent_type":"express","pal
 $(document).ready(function () {
     $("#container").flipBook({
         pages:[
-            {src:"https://fotomarko.de/assets/images/book2/page1.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb1.jpg", title:"fotomarko.de Book"},
-            {src:"https://fotomarko.de/assets/images/book2/page9.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb2.jpg", title:"Page two"},
-            {src:"https://fotomarko.de/assets/images/book2/page8.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb3.jpg", title:"Page three"},
-            {src:"https://fotomarko.de/assets/images/book2/page7.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb4.jpg", title:""},
-            {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb5.jpg", title:"Page five"},
-            {src:"https://fotomarko.de/assets/images/book2/page5.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb6.jpg", title:"Page six"},
-            {src:"https://fotomarko.de/assets/images/book2/page6.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb7.jpg", title:"Page seven"},
-            {src:"https://fotomarko.de/assets/images/book2/page4.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumb8.jpg", title:"Last"}
-        ],zoomLevels:[0.9,3], deeplinking:{enabled:true, prefix:"",autoplayOnStart:true, autoplayInterval:3000,backgroundColor:"#FFFFFF"}
+            {src:"https://fotomarko.de/assets/images/book2/page1.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs1.jpg", title:"fotomarko.de Book First Page"},
+            {src:"https://fotomarko.de/assets/images/book2/page9.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs9.jpg", title:"Page two - Girl's portrait"},
+            {src:"https://fotomarko.de/assets/images/book2/page8.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs8.jpg", title:"Page three - Georg's Portrait"},
+            {src:"https://fotomarko.de/assets/images/book2/page7.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs7.jpg", title:"Page four - little girl with Glockhen"},
+            {src:"https://fotomarko.de/assets/images/book2/page3.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs3.jpg", title:"Page five - My friend Ihor"},
+            {src:"https://fotomarko.de/assets/images/book2/page5.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs5.jpg", title:"Page six - Sample of Subject photography"},
+            {src:"https://fotomarko.de/assets/images/book2/page6.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs6.jpg", title:"Page seven - One more Subject"},
+            {src:"https://fotomarko.de/assets/images/book2/page4.jpg", thumb:"https://fotomarko.de/assets/images/book2/thumbs4.jpg", title:"Page eight - Black and white photo of city"}
+        ],zoomLevels:[0.9,3], deeplinking:{enabled:true, prefix:"",autoplayOnStart:true, autoplayInterval:3000,backgroundColor:"#FFF"}
     });
 
 })
