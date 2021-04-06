@@ -18,7 +18,7 @@ class PanoramaController extends Controller
                 'panodescription' => 'Panodescription',
                 'panosmmimage' => 'https://fotomarko.de/Dnipro-02/pano/pano1small.jpg'
             ];
-        return view('panos.panofull', compact('panoconfig'));
+        return view('panos.panofull', compact(['panoconfig','pano']));
         }
     }
 
