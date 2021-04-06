@@ -24,14 +24,14 @@ Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'local
     Route::get('blog', [BlogController::class, 'index'])->name('deblog');
     // ...
     $pano = '';
-    Route::get('panoramas/{pano}', [PanoramaController::class, 'showpano'])->name('depano');
+    Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('depano');
     Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
 });
 
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
     Route::get('blog', [BlogController::class, 'index'])->name('enblog');
-    Route::get('panoramas/{pano}', [PanoramaController::class, 'showpano'])->name('enpano');
+    Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano');
     Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
     // ...
 });
