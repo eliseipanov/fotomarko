@@ -13,7 +13,12 @@ class PanoramaController extends Controller
         return redirect()->action('${App\Http\Controllers\IndexPagecontroller@index}', ['alert' => 'no panoramaslug!']);
         }
         else {
-        return view('panos.panofull');
+            $panoconfig = [
+                'panotitle' => 'This is Panorama',
+                'panodescription' => 'Panodescription',
+                'panosmmimage' => 'https://fotomarko.de/Dnipro-02/pano/pano1small.jpg'
+            ];
+        return view('panos.panofull', compact('panoconfig'));
         }
     }
 
