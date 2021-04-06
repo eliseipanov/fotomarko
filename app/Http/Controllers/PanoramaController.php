@@ -22,7 +22,7 @@ class PanoramaController extends Controller
         }
     }
 
-    public function panoconfig($id) {
+    public function panoconfig($slug) {
 
         $jsonconfig->panoequi = "/Dnipro-01/pano/pano1_smola.jpg";
         return view('panos.configpano',compact('jsonconfig'));
