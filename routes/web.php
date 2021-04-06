@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 use App\Http\Controllers\BlogController as BlogController;
 use App\Http\Controllers\TestMail;
+use App\Http\Controllers\PanoramaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,11 +23,15 @@ Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'local
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('dehome');
     Route::get('blog', [BlogController::class, 'index'])->name('deblog');
     // ...
+    Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('depano'.$slug);
+    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
 });
 
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
     Route::get('blog', [BlogController::class, 'index'])->name('enblog');
+    Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano'.$slug);
+    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
     // ...
 });
 
@@ -34,7 +39,7 @@ Route::get('/', function() {
     return redirect()->route('dehome');
 });
 
-Route::get('sendmail', [TestMail::class, 'sendmail']);
+Route::post('sendmail', [TestMail::class, 'sendmail']);
 /* Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
  */
