@@ -13,11 +13,11 @@ class PanoramaController extends Controller
         return redirect()->action('${App\Http\Controllers\IndexPagecontroller@index}', ['alert' => 'no panoramaslug!']);
         }
         else {
-        return view('panos.panofull', compact('jsonconfig'));
+        return view('panos.panofull');
         }
     }
 
-    public function panoconfig(Request $request) {
+    public function panoconfig($id) {
 
         $jsonconfig->panoequi = "/Dnipro-01/pano/pano1_smola.jpg";
         return view('panos.configpano',compact('jsonconfig'));
