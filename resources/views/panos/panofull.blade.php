@@ -8,12 +8,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <meta name="title" content="{{ $panoconfig->panotitle ?? 'Panorama' }}">
-    <meta property="og:title" content="{{ $panoconfig->panodescription ?? ''  }}">
-    <meta property="og:description" content="{{ $panoconfig->panodescription }}">
-    <meta property="og:image" content="{{ $panoconfig->panosmmimage ?? '' }}">
+    <meta name="title" content="{{ $panoconfig[0]->panotitle ?? 'Panorama' }}">
+    <meta property="og:title" content="{{ $panoconfig[0]->panodescription ?? ''  }}">
+    <meta property="og:description" content="{{ $panoconfig[0]->panodescription ?? '' }}">
+    <meta property="og:image" content="{{ $panoconfig[0]->panosmmimage ?? '' }}">
     <meta property="og:url" content="https://fotomarko.de/Dnipro-01/pano/index.html">
-    <meta name="description" content="{{ $panoconfig->panodescription ?? ''}}">
+    <meta name="description" content="{{ $panoconfig[0]->panodescription ?? '' }}">
     <title>{{ $panoconfig->panotitle ?? 'Panorama' }}</title>
 
     <!-- Little styling -->
