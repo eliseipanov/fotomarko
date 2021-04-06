@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 use App\Http\Controllers\BlogController as BlogController;
+use App\Http\Controllers\TestMail;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,6 +34,7 @@ Route::get('/', function() {
     return redirect()->route('dehome');
 });
 
+Route::get('sendmail', [TestMail::class, 'sendmail']);
 /* Route::get('/', [IndexPagecontroller::class, 'index']);
 Route::get('/blog', [BlogController::class, 'index']);
  */
