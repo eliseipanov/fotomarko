@@ -37,7 +37,7 @@ Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'local
 });
 
 Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano');
-    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
+    Route::get('configpano', [PanoramaController::class, 'panoconfig']);
 
 Route::get('/', function() {
     return redirect()->route('dehome');
