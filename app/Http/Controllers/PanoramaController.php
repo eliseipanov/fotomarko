@@ -9,8 +9,12 @@ class PanoramaController extends Controller
 {
     //
     public function showpano($slug) {
-
+        if(!isset($slug)) {
+        return redirect()->action('${App\Http\Controllers\IndexPagecontroller@index}', ['alert' => 'no panoramaslug!']);
+        }
+        else {
         return view('panos.panofull', compact('jsonconfig'));
+        }
     }
 
     public function panoconfig(Request $request) {

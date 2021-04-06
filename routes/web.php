@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\IndexPageController as IndexPagecontroller;
