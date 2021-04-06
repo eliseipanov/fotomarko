@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Http;
 use App\Http\Controllers\IndexPageController as IndexPagecontroller;
 use App\Http\Controllers\BlogController as BlogController;
 use App\Http\Controllers\TestMail;
-use App\Http\Controllers\PanoramaController;
+use App\Http\Controllers\PanoramaController as PanoramaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +35,9 @@ Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'local
     Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
     // ...
 });
+
+Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano');
+    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
 
 Route::get('/', function() {
     return redirect()->route('dehome');
