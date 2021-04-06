@@ -8,8 +8,8 @@ use App\Models\Panoramas;
 class PanoramaController extends Controller
 {
     //
-    public function showpano($slug) {
-        if(!isset($slug)) {
+    public function showpano($pano) {
+        if(!isset($pano)) {
         return redirect()->action('${App\Http\Controllers\IndexPagecontroller@index}', ['alert' => 'no panoramaslug!']);
         }
         else {

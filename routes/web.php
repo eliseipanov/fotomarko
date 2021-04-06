@@ -30,7 +30,7 @@ Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'local
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
     Route::get('blog', [BlogController::class, 'index'])->name('enblog');
-    Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano'.$slug);
+    Route::get('panoramas/{pano}', [PanoramaController::class, 'showpano'])->name('enpano'.$slug);
     Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
     // ...
 });
