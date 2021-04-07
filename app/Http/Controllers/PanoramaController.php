@@ -82,6 +82,6 @@ class PanoramaController extends Controller
                 "left" => 10
             ],
         ];
-        return response()->json(json_decode($data));
+        return response()->json(json_decode($data, true));
     }
 }
