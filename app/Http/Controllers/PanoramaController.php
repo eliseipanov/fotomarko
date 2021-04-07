@@ -37,7 +37,7 @@ class PanoramaController extends Controller
             "default" => "scene-0",
             "scenes" => [],
         ];
-        $data['story']['scenes'] = [
+        $data['story']['scenes'][0] = [
             "uid" => "scene-0",
                 "name" => "First scene",
                 "slug" => "first-scene",
