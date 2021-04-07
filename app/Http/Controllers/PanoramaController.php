@@ -30,7 +30,7 @@ class PanoramaController extends Controller
             'plugins' => [],
         ];
         $data['story'] = [
-            'uid' => '',
+            'uid' => 'simpliest-story 2',
             "name" => "Simpliest Story",
             "slug" => "simpliest-story",
             "description" => "This is the simpliest story ever",
