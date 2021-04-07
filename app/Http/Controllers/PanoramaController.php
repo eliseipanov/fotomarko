@@ -24,7 +24,7 @@ class PanoramaController extends Controller
 
     public function config() {
         $slug = '';
-        $jsonconfig->panoequi = "/Dnipro-01/pano/pano1_smola.jpg";
+      //  $jsonconfig->panoequi = "/Dnipro-01/pano/pano1_smola.jpg";
         $data = [
             'story' => [],
             'plugins' => [],
