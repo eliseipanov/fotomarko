@@ -1,17 +1,18 @@
 {
-    "story":
-    {
-        "uid": "",
+    "story": {
+        "uid": "simpliest-story 2",
         "name": "Simpliest Story",
         "slug": "simpliest-story",
         "description": "This is the simpliest story ever",
         "default": "scene-0",
-
         "scenes": {
-            "uid": "scene-0",
-            "name": "First scene",
-            "slug": "first-scene",
-            "description": "This is the first and only scene",
+            "0": {
+                "uid": "scene-0",
+                "name": "First scene",
+                "slug": "first-scene",
+                "description": "This is the first and only scene",
+                "media": []
+            },
             "media": {
                 "uid": "media-0",
                 "type": "image",
@@ -24,7 +25,8 @@
     },
     "plugins": {
         "prefix": "plugins\/",
-        "engines": [
+        "engines":
+        [
             {
                 "uid": "org.forgejs.webvrbutton",
                 "url": "WebVRButton\/"
@@ -34,7 +36,8 @@
                 "url": "GyroscopeButton\/"
             }
         ],
-        "instances": [
+        "instances":
+        [
             {
                 "uid": "webvrbutton",
                 "engine": "org.forgejs.webvrbutton",

@@ -44,12 +44,12 @@ class PanoramaController extends Controller
                 "description" => "This is the first and only scene",
                 "media" => [],
         ];
-        $data['story']['scenes']['media'] = [
+        $data['story']['scenes'][0]['media'] = [
             "uid" => "media-0",
             "type" => "image",
             "source" => [],
         ];
-        $data['story']['scenes']['media']['source'] = [
+        $data['story']['scenes'][0]['media']['source'] = [
             "format" => "equi",
             "url" => "assets/Dnipro-01/pano/pano1_smola.jpg",
         ];
