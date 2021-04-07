@@ -1,11 +1,11 @@
 {
-    "story": {
+    "story":
+    {
         "uid": "simpliest-story 2",
         "name": "Simpliest Story",
         "slug": "simpliest-story",
         "description": "This is the simpliest story ever",
         "default": "scene-0",
-
         "scenes":
         [
             {
@@ -18,22 +18,22 @@
                     "type": "image",
                     "source": {
                         "format": "equi",
-                        "url": "assets\/Dnipro-01\/pano\/pano1_smola.jpg"
+                        "url": "assets/Dnipro-01/pano/pano1_smola.jpg"
                     }
                 }
             }
         ]
     },
     "plugins": {
-        "prefix": "plugins\/",
+        "prefix": "plugins/",
         "engines": [
             {
                 "uid": "org.forgejs.webvrbutton",
-                "url": "WebVRButton\/"
+                "url": "WebVRButton/"
             },
             {
                 "uid": "org.forgejs.gyroscopebutton",
-                "url": "GyroscopeButton\/"
+                "url": "GyroscopeButton/"
             }
         ],
         "instances": [
