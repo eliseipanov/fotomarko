@@ -50,7 +50,7 @@
   overflow: hidden;
   /* фоновый цвет */
   background: #e0e0e0;
-  z-index: 1001;
+  z-index: 2;
 }
 
 .preloader__image {
@@ -94,7 +94,7 @@
 
 <body data-nanobar="radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)">
     <script src="{{ asset('assets') }}/lib/nanobar.min.js"></script>
-    <div id="nanobar"></div>
+
         <div class="preloader">
         <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="currentColor"
