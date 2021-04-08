@@ -46,7 +46,7 @@
         bottom: 0;
         overflow: hidden;
         background: #fff;
-        z-index: 1001;
+        z-index: 3;
         }
 
         .preloader__image {
@@ -58,6 +58,7 @@
         margin-top: -32px;
         margin-left: -32px;
         background: url('https://fotomarko.de/assets/images/spinner2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+        z-index: 9999;
         }
 
         .loaded_hiding .preloader {
