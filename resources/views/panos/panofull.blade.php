@@ -40,12 +40,47 @@
             min-height: 0.8em;
             z-index: 1;
         }
+        .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+        }
+        .lds-ripple div {
+        position: absolute;
+        border: 4px solid #fff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+        }
+        .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+        }
+        @keyframes lds-ripple {
+        0% {
+            top: 36px;
+            left: 36px;
+            width: 0;
+            height: 0;
+            opacity: 1;
+        }
+        100% {
+            top: 0px;
+            left: 0px;
+            width: 72px;
+            height: 72px;
+            opacity: 0;
+        }
+        }
+
+
     </style>
 </head>
 
 <body data-nanobar="radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)">
     <script src="{{ asset('assets') }}/lib/nanobar.min.js"></script>
     <div id="nanobar"></div>
+    <div class="lds-ripple"><div></div><div></div></div>
     <div id="container"></div>
 
     <!-- Include the threejs custom build -->
