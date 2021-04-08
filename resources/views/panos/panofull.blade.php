@@ -54,7 +54,7 @@
     <script type="text/javascript">
 
         // Create a viewer
-        var viewer = new FORGE.Viewer("container", "/configpano?!!}{{ $slag[0] }}{!!");
+        var viewer = new FORGE.Viewer("container", "/configpano/!!}{{ $id ?? '' }}{!!");
 
     </script> !!}
 </body>
