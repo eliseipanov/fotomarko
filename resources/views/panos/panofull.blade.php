@@ -36,49 +36,38 @@
             height: 100%;
             z-index: -1;
         }
-        div#nanobar {
-            min-height: 0.8em;
-            z-index: 1;
-        }
+
        /* Preloader CSS */
        .preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  /* фоновый цвет */
-  background: #e0e0e0;
-  z-index: 2;
-}
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background: #fff;
+        z-index: 1001;
+        }
 
-.preloader__image {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
-  text-align: center;
-  animation: preloader-rotate 2s infinite linear;
-}
+        .preloader__image {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 64px;
+        height: 64px;
+        margin-top: -32px;
+        margin-left: -32px;
+        background: url({{asset('assets')}}'/images/spinner2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+        }
 
-@keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+        .loaded_hiding .preloader {
+        transition: 0.3s opacity;
+        opacity: 0;
+        }
 
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
-}
-
-.loaded .preloader {
-  display: none;
-}
+        .loaded .preloader {
+        display: none;
+        }
 
     </style>
     <script>
@@ -92,16 +81,12 @@
 </script>
 </head>
 
-<body data-nanobar="radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)">
-    <script src="{{ asset('assets') }}/lib/nanobar.min.js"></script>
-
-        <div class="preloader">
-        <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="currentColor"
-        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-        </path>
-    </svg>
+<body>
+    <!-- Прелоадер -->
+    <div class="preloader">
+    <div class="preloader__image"></div>
     </div>
+
     <div id="container"></div>
 
     <!-- Include the threejs custom build -->
