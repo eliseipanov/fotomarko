@@ -45,6 +45,7 @@
         position: relative;
         width: 80px;
         height: 80px;
+        background-color: black;
         }
         .lds-ripple div {
         position: absolute;
