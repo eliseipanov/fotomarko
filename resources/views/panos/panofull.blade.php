@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://fotomarko.de/Dnipro-01/pano/index.html">
     <meta name="description" content="{{ $panoconfig[0]->panodescription ?? '' }}">
     <title>{{ $panoconfig->panotitle ?? 'Panorama' }}</title>
-    <script src="{{ asset('assets')}}/lib/nanobar.min.js"></script>
+
 
     <!-- Little styling -->
     <style type="text/css">
@@ -34,11 +34,16 @@
         div#container
         {
             height: 100%;
+            z-index: -1;
+        }
+        div#nanobar {
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
+    <script src="{{ asset('assets') }}/lib/nanobar.min.js"></script>
     <div id="nanobar"></div>
     <div id="container"></div>
 
