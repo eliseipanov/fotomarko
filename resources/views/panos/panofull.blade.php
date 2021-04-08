@@ -57,7 +57,7 @@
         height: 64px;
         margin-top: -32px;
         margin-left: -32px;
-        background: url({{asset('assets')}}'/images/spinner2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
+        background: url('https://fotomarko.de/assets/images/spinner2.gif') no-repeat 50% 50%; /*расположение (url) изображения gif и др. параметры*/
         }
 
         .loaded_hiding .preloader {
