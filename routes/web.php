@@ -25,18 +25,19 @@ Route::group(['prefix' => 'de', 'namespace' => 'Deutsch', 'middleware' => 'local
     // ...
     $pano = '';
     Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('depano');
-    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
+    Route::get('config', [PanoramaController::class, 'config']);
 });
 
 Route::group(['prefix' => 'en', 'namespace' => 'English', 'middleware' => 'locale:en'], function() {
     Route::get('/', [IndexPagecontroller::class, 'index'])->name('enhome');
     Route::get('blog', [BlogController::class, 'index'])->name('enblog');
     Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano');
-    Route::get('configpano/{id}', [PanoramaController::class, 'panoconfig']);
+    Route::get('config', [PanoramaController::class, 'config']);
     // ...
 });
 
-Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano'])->name('enpano');
+
+Route::get('panoramas/{slug}', [PanoramaController::class, 'showpano']);
 Route::get('config', [PanoramaController::class, 'config']);
 
 Route::get('/', function() {
