@@ -37,12 +37,13 @@
             z-index: -1;
         }
         div#nanobar {
+            min-height: 0.8em;
             z-index: 1;
         }
     </style>
 </head>
 
-<body>
+<body data-nanobar="radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)">
     <script src="{{ asset('assets') }}/lib/nanobar.min.js"></script>
     <div id="nanobar"></div>
     <div id="container"></div>
