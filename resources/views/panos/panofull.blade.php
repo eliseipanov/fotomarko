@@ -50,12 +50,11 @@
     <script type="text/javascript" src="{{asset('assets')}}/lib/forge/forge.min.js" ></script>
 
     <!-- Start ForgeJS -->
-    {!!
     <script type="text/javascript">
 
         // Create a viewer
-        var viewer = new FORGE.Viewer("container", "/configpano/!!}{{ $id ?? '' }}{!!");
+        var viewer = new FORGE.Viewer("container", "/config?id{{ $id ?? '' }}");
 
-    </script> !!}
+    </script>
 </body>
 </html>
