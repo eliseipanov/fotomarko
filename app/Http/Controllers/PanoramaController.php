@@ -50,13 +50,13 @@ class PanoramaController extends Controller
             "source" => [],
         ];
         $urlimage= asset('/')."Dnipro-01/pano/pano1_smola.jpg";
-
+        $prefix = asset('assets/plugins/');
         $data['story']['scenes'][0]['media']['source'] = [
             "format" => "equi",
             "url" => $urlimage,
         ];
         $data['plugins'] = [
-            "prefix" => "plugins/",
+            "prefix" => $prefix,
             "engines" => [],
             "instances"=> [],
         ];
