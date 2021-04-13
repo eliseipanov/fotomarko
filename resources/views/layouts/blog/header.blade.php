@@ -6,13 +6,21 @@
  <meta charset="utf-8">
  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
- <title>Blog || Oleksii Marchenko || Fotografer in Osnabrück</title>
- <meta content="Does your company need a photographer? An album of memories instead of soapy Facebook photos? +49 176 77975978" name="description">
- <meta content="Photographer, Russian photographer in Osnabrück, Russian-speaking photographer, Ukrainians in Osnabrück" name="keywords">
+ <title>{{ __('blog.title')}}</title>
+ <meta content="{{ __('blog.description')}} +49 176 77975978" name="description">
+ <meta content="{{ __('blog.keywords')}}" name="keywords">
 
  <!-- Favicons -->
- <link href="{{asset('assets')}}/img/favicon.png" rel="icon">
- <link href="{{asset('assets')}}/img/apple-touch-icon.png" rel="apple-touch-icon">
+  {{-- Favicon Set --}}
+  <!--[if IE]><link rel="shortcut icon" href="{{asset('assets')}}/img/favicon.ico"><![endif]-->
+<link rel="icon" type="image/png" href="{{asset('assets')}}/img/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{asset('assets')}}/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{asset('assets')}}/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets')}}/img/favicon-16x16.png">
+<link rel="manifest" href="{{asset('assets')}}/img/site.webmanifest">
+<link rel="mask-icon" href="{{asset('assets')}}/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
 
  <!-- Google Fonts -->
  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
