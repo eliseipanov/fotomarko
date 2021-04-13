@@ -24,7 +24,7 @@
                     "source":
                     {
                         "format": "equi",
-                        !!}"url": "{{ $jsonconfig[0]->panoequi ?? 'Dnipro-01/pano/pano1_smola.jpg' }}"{!!
+                        !!}"url": "{{ $jsonconfig[0]->panoequi ?? 'Dnipro-01/pano/villasuite.jpg' }}"{!!
                     }
                 }
             }
