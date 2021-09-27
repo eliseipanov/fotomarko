@@ -9,7 +9,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/" class="active">{{ __('mainpage.home')}}</a></li>
-
+          <li><a href="#portfolio" class="active">PORTFOLIO</a></li>
           {{-- <li class="dropdown"><a href="#"><span>{{ __('mainpage.about') }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/about">{{ __('mainpage.about') }}</a></li>

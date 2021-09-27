@@ -1,15 +1,16 @@
 <!-- ======= Portfolio Section ======= -->
 <section id="portfolio" class="portfolio">
+    <a name="portfolio"></a>
     <div class="container">
 
       <div class="row">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-people">People</li>
-            <li data-filter=".filter-subjects">Subjects</li>
-            <li data-filter=".filter-animals">Animals</li>
-            <li data-filter=".filter-city">City</li>
+            <li data-filter="*" class="filter-active">Alle</li>
+            <li data-filter=".filter-people">Portraits</li>
+            <li data-filter=".filter-subjects">Subject</li>
+            <li data-filter=".filter-animals">Tieren</li>
+            <li data-filter=".filter-city">Ort</li>
           </ul>
         </div>
       </div>
