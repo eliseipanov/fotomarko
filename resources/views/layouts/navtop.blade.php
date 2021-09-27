@@ -10,7 +10,7 @@
         <ul>
           <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/" class="active">{{ __('mainpage.home')}}</a></li>
 
-          <li class="dropdown"><a href="#"><span>{{ __('mainpage.about') }}</span> <i class="bi bi-chevron-down"></i></a>
+          {{-- <li class="dropdown"><a href="#"><span>{{ __('mainpage.about') }}</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/about">{{ __('mainpage.about') }}</a></li>
               <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/team">{{ __('mainpage.team') }}</a></li>
@@ -20,7 +20,7 @@
           <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/services">{{ __('mainpage.services') }}</a></li>
           <li>
               {{-- <a href="/portfolio">Portfolio</a> --}}
-            <li class="dropdown">
+         <!--   <li class="dropdown">
                 <a href="#"><span>Portfolio</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/tags/people">{{ __('mainpage.people') }}</a></li>
@@ -34,7 +34,7 @@
           <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/pricing">{{ __('mainpage.pricing') }}</a></li>
           <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/blog">{{ __('mainpage.blog') }}</a></li>
 
-          <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/contact">{{ __('mainpage.contact') }}</a></li>
+          <li><a href="/{{ str_replace('_', '-', app()->getLocale()) }}/contact">{{ __('mainpage.contact') }}</a></li> --}} -->
           <li><a href="#contact" class="getstarted">{{ __('mainpage.getintouch') }}</a></li>
           <li class="dropdown"><a href="#"><span>{{ __('mainpage.language') }} </span> <i class="bi bi-chevron-right"></i></a>
             <ul>
