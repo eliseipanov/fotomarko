@@ -8,9 +8,9 @@
           <ul id="portfolio-flters">
             <li data-filter="*" class="filter-active">Alle</li>
             <li data-filter=".filter-people">Portraits</li>
-            <li data-filter=".filter-subjects">Subject</li>
-            <li data-filter=".filter-animals">Tieren</li>
-            <li data-filter=".filter-city">Ort</li>
+            <li data-filter=".filter-subjects">Artikel</li>
+            <li data-filter=".filter-animals">Tiere</li>
+            <li data-filter=".filter-city">Stadt</li>
           </ul>
         </div>
       </div>
