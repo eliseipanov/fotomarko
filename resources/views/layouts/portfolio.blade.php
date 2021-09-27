@@ -44,6 +44,21 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-people">
+            <div class="portfolio-wrap">
+              <img src="{{asset('assets/img/portfolio')}}/portfolio-sena.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>People</h4>
+                <p>Jesenia und Ball</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('assets/img/portfolio')}}/portfolio-sena.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Jesenia und Ball"><i class="bx bx-plus"></i></a>
+                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-subjects">
           <div class="portfolio-wrap">
             <img src="{{asset('assets/img/portfolio')}}/portfolio-12.jpg" class="img-fluid" alt="">
@@ -84,6 +99,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-people">
           <div class="portfolio-wrap">
             <img src="{{asset('assets/img/portfolio')}}/portfolio-georg.jpg" class="img-fluid" alt="">
