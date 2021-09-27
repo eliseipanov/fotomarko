@@ -6,9 +6,17 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Oleksii Marchenko - Fotografer in Osnabrück</title>
-  <meta content="Нужен фотограф для компании? Альбом с воспоминаниями вместо мыльных фоток в Фейсбуке? НОМЕР ТЕЛЕФОНА" name="description">
-  <meta content="фотограф, русский фотограф в оснабрюке, русскогвоорящий фотограф, украинцы в Оснабрюке" name="keywords">
-
+  <meta content="FOTOGRAF UND FOTODESIGNER -  OSNABRÜCK!" name="title">
+  <meta content="Osnabrück! Braucht Ihr Unternehmen einen Fotografen? Rufen Sie +49 176 779 759 78 an!" name="description">
+  <meta content="Fotograf, russischer Fotograf in Osnabrück, russischsprachiger Fotograf, ukrainischer Fotograf in Osnabrück" name="keywords">
+      <meta name="author" content="Oleksii Piliuhin-Marchenko">
+      <meta property="og:title" content="FOTOGRAF UND FOTODESIGNER -  OSNABRÜCK!">
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="Osnabrück! Braucht Ihr Unternehmen einen Fotografen? Rufen Sie +49 176 779 759 78 an!">
+      <meta property="og:url" content="https://fotomarko.de/de/" />
+      <meta property="og:image" content="{{asset('assets')}}/img/portfolio/portfolio-night.jpg">
+                  {{-- <meta property="fb:app_id" content="876589453292840" /> --}}
+      <meta name="robots" content="index, follow">
   <!-- Favicons -->
   <link href="{{asset('assets')}}/img/favicon.png" rel="icon">
   <link href="{{asset('assets')}}/img/apple-touch-icon.png" rel="apple-touch-icon">
