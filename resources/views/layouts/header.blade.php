@@ -14,7 +14,7 @@
       <meta property="og:type" content="website" />
       <meta property="og:description" content="Osnabrück! Braucht Ihr Unternehmen einen Fotografen? Rufen Sie +49 176 779 759 78 an!">
       <meta property="og:url" content="https://fotomarko.de/de/" />
-      <meta property="og:image" content="{{asset('assets')}}/img/portfolio/portfolio-night.jpg">
+      <meta property="og:image" content="{{asset('assets/img/portfolio')}}/portfolio-lesha.jpg">
                   {{-- <meta property="fb:app_id" content="876589453292840" /> --}}
       <meta name="robots" content="index, follow">
   <!-- Favicons -->
