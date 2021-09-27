@@ -125,6 +125,20 @@
           </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-people">
+            <div class="portfolio-wrap">
+              <img src="{{asset('assets/img/portfolio')}}/portfolio-nata.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>People</h4>
+                <p>Natali</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('assets/img/portfolio')}}/portfolio-nata.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Natali"><i class="bx bx-plus"></i></a>
+                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-animals">
           <div class="portfolio-wrap">
             <img src="{{asset('assets/img/portfolio')}}/portfolio-6.jpg" class="img-fluid" alt="">
@@ -152,6 +166,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-city">
           <div class="portfolio-wrap">
             <img src="{{asset('assets/img/portfolio')}}/portfolio-city2.jpg" class="img-fluid" alt="">
@@ -165,6 +180,21 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-people">
+            <div class="portfolio-wrap">
+              <img src="{{asset('assets/img/portfolio')}}/portfolio-viktoria.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>People</h4>
+                <p>Viktoria</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('assets/img/portfolio')}}/portfolio-viktoria.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Viktoria"><i class="bx bx-plus"></i></a>
+                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-subjects">
           <div class="portfolio-wrap">
@@ -234,6 +264,20 @@
           </div>
         </div>
 
+        <div class="col-lg-4 col-md-6 portfolio-item filter-animals">
+            <div class="portfolio-wrap">
+              <img src="{{asset('assets/img/portfolio')}}/portfolio-zoo.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Animals</h4>
+                <p>Schushpanchik</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('assets/img/portfolio')}}/portfolio-zoo.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Schushpanchik"><i class="bx bx-plus"></i></a>
+                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
         <div class="col-lg-4 col-md-6 portfolio-item filter-city">
           <div class="portfolio-wrap">
             <img src="{{asset('assets/img/portfolio')}}/portfolio-city6.jpg" class="img-fluid" alt="">
@@ -289,6 +333,19 @@
             </div>
           </div>
         </div>
+        <div class="col-lg-4 col-md-6 portfolio-item filter-subjects">
+            <div class="portfolio-wrap">
+              <img src="{{asset('assets/img/portfolio')}}/portfolio-night.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Subjects</h4>
+                <p>Gluck</p>
+                <div class="portfolio-links">
+                  <a href="{{asset('assets/img/portfolio')}}/portfolio-night.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="gluck"><i class="bx bx-plus"></i></a>
+                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-animals">
           <div class="portfolio-wrap">
