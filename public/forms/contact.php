@@ -54,14 +54,14 @@ $message = "
 <p>Данные для связи:</p>
 <table>
 <tr>
-<th>Имя</th>
-<th>Фамилия</th>
+<th>Nahme</th>
+<th>Email</th>
 </tr>
 <tr>
 <td>".$_POST['name']."</td>
 <td>".$_POST['email']."</td>
 </tr>
-</table><HR> Заголовок:<BR/> ".$_POST['subject']."<br/>Месседж: <BR />".$_POST['message']."
+</table><HR> Subject:<BR/> ".$_POST['subject']."<br/>SMS: <BR />".$_POST['message']."
 </body>
 </html>
 ";
