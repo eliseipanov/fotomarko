@@ -72,5 +72,7 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <www-data@fotomarko.de>' . "\r\n";
 $headers .= 'Cc: master@buddha.net.ua' . "\r\n";
 
-mail($to,$subject,$message,$headers);
+if (mail($to,$subject,$message,$headers)){
+    @header("Refresh:0");
+}
 ?>
