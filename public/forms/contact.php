@@ -75,8 +75,9 @@ $headers .= 'From: <www-data@fotomarko.de>' . "\r\n";
 $headers .= 'Cc: master@buddha.net.ua' . "\r\n";
 
 if (mail($to,$subject,$message,$headers)){
-    @header("Refresh:0");
+    header("Refresh:2");
  }
+ else {print "письмо не отослано, вернитесь назад <a href='https://fotomarko.de'></a>";}
 }
 else {@header("Refresh:3");}
 ?>
