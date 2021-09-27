@@ -25,7 +25,7 @@
               <p>Irma</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@
               <p>Crockuses</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-12.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@
               <p>Center</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@
               <p>App</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
               <p>Georg</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-georg.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@
               <p>The Cat</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Cat"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@
               <p>Center</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -133,7 +133,7 @@
               <p>Forest Gamp the Dog</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@
               <p>Saules Tochter</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -160,7 +160,7 @@
               <p>Center</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@
               <p>Naturmorte</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -187,7 +187,7 @@
               <p>The Dog Number</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-animals04.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@
               <p>Proliski</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-subjectsQ.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Balerina"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
               <p>Center</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@
               <p>Mashrooms</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-11.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -242,7 +242,7 @@
               <p>Bremer Str</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -256,7 +256,7 @@
               <p>Self portrait with Forest</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-animals02.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -270,7 +270,7 @@
               <p>Web</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Balerina"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -284,7 +284,7 @@
               <p>Center</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-city5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Osnabrück, Center"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -298,7 +298,7 @@
               <p>Dogs are Great</p>
               <div class="portfolio-links">
                 <a href="{{asset('assets/img/portfolio')}}/portfolio-animals03.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
