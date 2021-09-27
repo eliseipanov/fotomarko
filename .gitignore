@@ -1,3 +1,4 @@
+.gitignore
 /node_modules
 /public/hot
 /public/storage
@@ -14,7 +15,7 @@ yarn-error.log
 *.code-workspace
 *.log
 deploy.log
-public/deploy.log
+/public/deploy.log
 /public/deploy.*
 /public/deployer.php
 /public/deployme.php
