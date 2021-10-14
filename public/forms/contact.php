@@ -5,13 +5,12 @@
   * The library should be uploaded to: vendor/php-email-form/php-email-form.php
   * For more info and help: https://bootstrapmade.com/php-email-form/
   */
-
+//$content = $_POST['content']; $file = "text.txt"; $Saved_File = fopen($file, 'w'); fwrite($Saved_File, $content); fclose($Saved_File);
   // Replace contact@example.com with your real receiving email address
 
 //exit(var_dump($_POST));
   if (empty($_POST['recaptcha'])) {
-$content = $_POST['content']; $file = "text.txt"; $Saved_File = fopen($file, 'w'); fwrite($Saved_File, $content); fclose($Saved_File);
-die();
+
 	exit('Please set recaptcha variable');
 }
 // validate recaptcha

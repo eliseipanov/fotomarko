@@ -7,7 +7,7 @@ function send2AjaxRequest() {
 	}
 
 	var response = grecaptcha.getResponse();
-    console.log(response);
+    //console.log(response);
     var formData = {
         name: $("#name").val(),
         email: $("#email").val(),
