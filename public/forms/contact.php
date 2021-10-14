@@ -36,7 +36,7 @@ if (!$serverResponse) {
 }
 $result = json_decode($serverResponse);
 if (!$result -> success) {
-	exit('Invalid Recaptcha'. $result);
+	exit('Invalid Recaptcha');
 }
 else {
 
@@ -59,27 +59,8 @@ else {
 
 if(isset($_POST['email']))
 {
- /* $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send(); */
-  $to = $receiving_email_address;
+$to = $receiving_email_address;
 $subject = "From fotomarko.de website";
 
 $message = "
@@ -114,7 +95,7 @@ $headers .= 'Cc: master@buddha.net.ua' . "\r\n";
 if (mail($to,$subject,$message,$headers)){
     header("Refresh:0; url=https://fotomarko.de");
  }
- else {print "письмо не отослано, вернитесь назад <a href='https://fotomarko.de'></a>";}
+ else {exit("Kein E-mail versendet!";}
 }
 else {
 //    @header("Refresh:3; url=https://fotomarko.de");
