@@ -22,5 +22,5 @@ function sendAjaxRequest() {
 		}
 	}
 	ajax.open('POST', 'forms/contact.php', true);
-	ajax.send('recaptcha='   response);
+	ajax.send('recaptcha=', response);
 }
