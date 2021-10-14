@@ -32,7 +32,7 @@ function send2AjaxRequest() {
 	}
 	ajax.open('POST', 'forms/contact.php', true);
     ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    console.log(formData.name +' /t'+ formData.recaptcha);
+    console.log(formData.name +' <BR />'+ formData.recaptcha);
 	ajax.send(formData);
     // 'recaptcha='+ response
 }
