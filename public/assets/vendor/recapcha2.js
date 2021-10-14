@@ -18,7 +18,7 @@ function send2AjaxRequest() {
 
 
 	if (!response) {
-		alert('Coud not get recaptcha response');
+		alert('Kein Recaptcha Validation!');
 		return;
 	}
 
