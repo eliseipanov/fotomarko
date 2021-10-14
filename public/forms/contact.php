@@ -8,9 +8,9 @@
 
   // Replace contact@example.com with your real receiving email address
 
-exit(var_dump($_POST));
+//exit(var_dump($_POST));
   if (empty($_POST['recaptcha'])) {
-	exit('Please set recaptcha variable');
+	exit($_POST['name'] +'Please set recaptcha variable');
 }
 // validate recaptcha
 $response = $_POST['recaptcha'];
