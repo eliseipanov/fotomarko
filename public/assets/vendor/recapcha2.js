@@ -24,5 +24,5 @@ function send2AjaxRequest() {
 	}
 	ajax.open('POST', 'forms/contact.php', true);
     ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	ajax.send('recaptcha='+ response, true);
+	ajax.send('recaptcha='+ response);
 }
