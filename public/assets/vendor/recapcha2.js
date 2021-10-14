@@ -1,12 +1,13 @@
 var RC2KEY = '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh';
 
 function send2AjaxRequest() {
-	if (recaptcha === undefined) {
+	if (grecaptcha === undefined) {
 		alert('Recaptcha not defined');
 		return;
 	}
 
 	var response = grecaptcha.getResponse();
+    console.log(response);
 
 	if (!response) {
 		alert('Coud not get recaptcha response');
@@ -22,5 +23,5 @@ function send2AjaxRequest() {
 		}
 	}
 	ajax.open('POST', 'forms/contact.php', true);
-	ajax.send('recaptcha='+ response);
+	ajax.send('recaptcha=', response, true);
 }
