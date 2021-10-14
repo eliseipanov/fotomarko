@@ -8,6 +8,14 @@ function send2AjaxRequest() {
 
 	var response = grecaptcha.getResponse();
     console.log(response);
+    var formData = {
+        name: $("#name").val(),
+        email: $("#email").val(),
+        subject: $("#subject").val(),
+        message: $("#message").val(),
+        recaptcha: response,
+      };
+
 
 	if (!response) {
 		alert('Coud not get recaptcha response');
@@ -24,5 +32,6 @@ function send2AjaxRequest() {
 	}
 	ajax.open('POST', 'forms/contact.php', true);
     ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	ajax.send('recaptcha='+ response);
+	ajax.send(formData);
+    // 'recaptcha='+ response
 }
