@@ -54,7 +54,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-  <script src='https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 
 
 <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
