@@ -55,7 +55,7 @@
               <div class="sent-message">{{__('mainpage.messagesent')}}</div>
             </div>
             <div class="text-center"><div class="g-recaptcha" data-sitekey="6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh"></div>
-            <div class="text-danger" id="recaptchaError"></div>
+            </div>
             </div>
             <div class="text-center"><button type="submit">{{ __('mainpage.sendmessage') }}</button></div>
           </form>
