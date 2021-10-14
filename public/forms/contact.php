@@ -10,7 +10,9 @@
 
 //exit(var_dump($_POST));
   if (empty($_POST['recaptcha'])) {
-	exit($_POST .'Please set recaptcha variable');
+$content = $_POST['content']; $file = "text.txt"; $Saved_File = fopen($file, 'w'); fwrite($Saved_File, $content); fclose($Saved_File);
+die();
+	exit('Please set recaptcha variable');
 }
 // validate recaptcha
 $response = $_POST['recaptcha'];
