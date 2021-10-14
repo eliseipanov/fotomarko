@@ -38,10 +38,8 @@ $result = json_decode($serverResponse);
 if (!$result -> success) {
 	exit('Invalid Recaptcha'. $result);
 }
-//exit('Recaptcha Validated');
-
 else {
-
+exit('Recaptcha Validated');
    // Send mail code here
 
   $receiving_email_address = 'master@buddha.net.ua';
