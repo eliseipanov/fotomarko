@@ -20,6 +20,8 @@
   $contact = new PHP_Email_Form;
   $contact->ajax = true;
 */
+
+
 if(isset($_POST['email']))
 {
  /* $contact->to = $receiving_email_address;

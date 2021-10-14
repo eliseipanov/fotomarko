@@ -34,7 +34,7 @@
 
         <div class="col-lg-8 mt-5 mt-lg-0">
 
-          <form action="https://fotomarko.de/forms/contact.php" method="post" role="form" class="php-email-form">
+          <form name="con-form" id="conform" action="https://fotomarko.de/forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="{{__('mainpage.yourname')}}" required>
@@ -54,7 +54,9 @@
               <div class="error-message"></div>
               <div class="sent-message">{{__('mainpage.messagesent')}}</div>
             </div>
-            <div class="text-center"><div class="g-recaptcha" data-sitekey="6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh"></div></div>
+            <div class="text-center"><div class="g-recaptcha" data-sitekey="6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh"></div>
+            <div class="text-danger" id="recaptchaError"></div>
+            </div>
             <div class="text-center"><button type="submit">{{ __('mainpage.sendmessage') }}</button></div>
           </form>
 
