@@ -1,6 +1,6 @@
 var RC2KEY = '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh';
 
-function sendAjaxRequest() {
+function send2AjaxRequest() {
 	if (grecaptcha === undefined) {
 		alert('Recaptcha not defined');
 		return;

@@ -58,7 +58,7 @@
               <div class="g-recaptcha" data-sitekey="6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh" id="g-recapcha2" render="explicit"></div>
             </div>
             {{-- </div> --}}
-            <div class="text-center"><button type="button" onclick="sendAjaxRequest()">{{ __('mainpage.sendmessage') }}</button></div>
+            <div class="text-center"><button type="button" onclick="send2AjaxRequest()">{{ __('mainpage.sendmessage') }}</button></div>
           </form>
 
         </div>
