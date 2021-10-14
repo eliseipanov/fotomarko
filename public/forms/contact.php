@@ -17,7 +17,8 @@ $response = $_POST['recaptcha'];
 $post = http_build_query(
  	array (
  		'response' => $response,
- 		'secret' => '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh',
+ 		//'secret' => '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh',
+         'secret' => '6LdBac4cAAAAAFhp1yD7qtR1pDSn3ajVDMJBipLb',
  		'remoteip' => $_SERVER['REMOTE_ADDR']
  	)
 );
@@ -35,9 +36,10 @@ if (!$serverResponse) {
 }
 $result = json_decode($serverResponse);
 if (!$result -> success) {
-	exit('Invalid Recaptcha');
+	exit('Invalid Recaptcha'. $result);
 }
 //exit('Recaptcha Validated');
+
 else {
 
    // Send mail code here
