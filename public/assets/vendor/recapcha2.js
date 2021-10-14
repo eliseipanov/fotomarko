@@ -13,7 +13,7 @@ function reCaptchaExpired () {
 
 function reCaptchaCallback () {
     /* this must be in the global scope for google to get access */
-    grecaptcha.render('id', {
+    grecaptcha.render('g-recapcha2', {
         'sitekey': RC2KEY,
         'callback': reCaptchaVerify,
         'expired-callback': reCaptchaExpired
@@ -23,7 +23,7 @@ function reCaptchaCallback () {
 document.forms['conform'].addEventListener('submit',function(e){
     if (doSubmit) {
         /* submit form or do something else */
-        $( "conform" ).first().submit();
+        $( "conform" ).submit();
     }
     else {
         console.log('Recapcha not validated!');
