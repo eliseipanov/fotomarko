@@ -95,7 +95,8 @@ $headers .= 'Cc: master@buddha.net.ua' . "\r\n";
 if (mail($to,$subject,$message,$headers)){
     header("Refresh:0; url=https://fotomarko.de");
  }
- else {exit("Kein E-mail versendet!";}
+ else {
+     exit('Kein E-mail versendet!');}
 }
 else {
 //    @header("Refresh:3; url=https://fotomarko.de");
