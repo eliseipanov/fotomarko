@@ -39,7 +39,7 @@ if (!$result -> success) {
 	exit('Invalid Recaptcha'. $result);
 }
 else {
-exit('Recaptcha Validated');
+
    // Send mail code here
 
   $receiving_email_address = 'master@buddha.net.ua';
@@ -116,7 +116,10 @@ if (mail($to,$subject,$message,$headers)){
  }
  else {print "письмо не отослано, вернитесь назад <a href='https://fotomarko.de'></a>";}
 }
-else {@header("Refresh:3; url=https://fotomarko.de");}
+else {
+//    @header("Refresh:3; url=https://fotomarko.de");
+exit('E-mail würde versendet! Danke');
+}
 
 }
 ?>
