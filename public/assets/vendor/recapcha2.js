@@ -1,34 +1,26 @@
-var RC2KEY = '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh',
-    doSubmit = false;
+var RC2KEY = '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh';
 
-function reCaptchaVerify(response) {
-    if (response === document.querySelector('.g-recaptcha-response').value) {
-        doSubmit = true;
-    }
+function sendAjaxRequest() {
+	if (grecaptcha === undefined) {
+		alert('Recaptcha not defined');
+		return;
+	}
+
+	var response = grecaptcha.getResponse();
+
+	if (!response) {
+		alert('Coud not get recaptcha response');
+		return;
+	}
+
+	var ajax = new XMLHttpRequest();
+	ajax.onreadystatechange = function() {
+		if (this.readyState === 4) {
+			if (this.status === 200) {
+				alert(this.responseText);
+			}
+		}
+	}
+	ajax.open('POST', 'forms/contact.php', true);
+	ajax.send('recaptcha='   response);
 }
-
-function reCaptchaExpired () {
-    /* do something when it expires */
-}
-
-function reCaptchaCallback () {
-    /* this must be in the global scope for google to get access */
-    grecaptcha.render('g-recapcha2', {
-        'sitekey': RC2KEY,
-        'callback': reCaptchaVerify,
-        'expired-callback': reCaptchaExpired
-    });
-}
-
-document.forms['conform'].addEventListener('submit',function(e){
-    if (doSubmit) {
-        console.log('doSobmit is = ' + doSubmit);
-        /* submit form or do something else */
-        $( "conform" ).submit();
-    }
-    else {
-        console.log('doSobmit is = ' + doSubmit);
-        console.log('Recapcha not validated!');
-        return true;
-    }
-})

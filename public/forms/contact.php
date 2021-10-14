@@ -7,6 +7,40 @@
   */
 
   // Replace contact@example.com with your real receiving email address
+
+  if (empty($_POST['recaptcha'])) {
+	exit('Please set recaptcha variable');
+}
+// validate recaptcha
+$response = $_POST['recaptcha'];
+$post = http_build_query(
+ 	array (
+ 		'response' => $response,
+ 		'secret' => '6LdBac4cAAAAABO_nymVeYO_MBvj2HKzShpwC3fh',
+ 		'remoteip' => $_SERVER['REMOTE_ADDR']
+ 	)
+);
+$opts = array('http' =>
+	array (
+		'method' => 'POST',
+		'header' => 'application/x-www-form-urlencoded',
+		'content' => $post
+	)
+);
+$context = stream_context_create($opts);
+$serverResponse = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $context);
+if (!$serverResponse) {
+	exit('Failed to validate Recaptcha');
+}
+$result = json_decode($serverResponse);
+if (!$result -> success) {
+	exit('Invalid Recaptcha');
+}
+//exit('Recaptcha Validated');
+else {
+
+   // Send mail code here
+
   $receiving_email_address = 'master@buddha.net.ua';
 
 
@@ -82,4 +116,6 @@ if (mail($to,$subject,$message,$headers)){
  else {print "письмо не отослано, вернитесь назад <a href='https://fotomarko.de'></a>";}
 }
 else {@header("Refresh:3; url=https://fotomarko.de");}
+
+}
 ?>
