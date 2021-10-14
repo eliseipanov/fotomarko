@@ -10,7 +10,7 @@
 
 
   if (empty($_POST['recaptcha'])) {
-	exit('Please set recaptcha variable '. print_r($_POST));
+	exit('Please set recaptcha variable');
 }
 // validate recaptcha
 $response = $_POST['recaptcha'];
