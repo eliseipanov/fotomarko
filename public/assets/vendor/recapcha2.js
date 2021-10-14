@@ -22,11 +22,13 @@ function reCaptchaCallback () {
 
 document.forms['conform'].addEventListener('submit',function(e){
     if (doSubmit) {
+        console.log('doSobmit is = ' + doSubmit);
         /* submit form or do something else */
         $( "conform" ).submit();
     }
     else {
+        console.log('doSobmit is = ' + doSubmit);
         console.log('Recapcha not validated!');
-        return false;
+        return true;
     }
 })
